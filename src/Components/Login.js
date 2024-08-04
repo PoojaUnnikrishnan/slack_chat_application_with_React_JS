@@ -13,10 +13,10 @@ function Login() {
       <LoginInnerContainer>
         <img
           src="https://www.pinclipart.com/picdir/big/552-5521409_new-slack-logo-2019-png-transparent-svg-vector.png"
-          alt=""
+          alt="slack logo"
         />
-        <h1>Sign in to the Boo's Fam</h1>
-        <p>Boo.slack.com</p>
+        <h1>Sign in to the Slack</h1>
+        <p>slack.com</p>
         <Button onClick={signIn}>Sign in with Google</Button>
       </LoginInnerContainer>
     </LoginContainer>
@@ -28,8 +28,9 @@ export default Login;
 const LoginContainer = styled.div`
   background-color: #f8f8f8;
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 `;
 const LoginInnerContainer = styled.div`
   padding: 100px;
@@ -47,5 +48,6 @@ const LoginInnerContainer = styled.div`
     text-transform: inherit !important;
     background-color: #0a8d48 !important; //priority given ti !important css property.
     color: white;
+    padding: 5px 15px;
   }
 `;
